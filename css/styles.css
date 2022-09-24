@@ -48,10 +48,11 @@ a {
   left: 0;
   right: 0;
   z-index: 2;
+  transition: all 0.3s;
 }
 
 .header__active {
-  background-color: rgb(81, 24, 147);
+  background-color: rgb(109, 44, 184);
 }
 
 .header__inner {
@@ -242,10 +243,13 @@ a {
   cursor: pointer;
 }
 
+.creating__option__active {
+  background-color: rgba(204, 52, 14, 0.35);
+}
+
 .creating__option::after,
 .creating__option:focus,
 .creating__option:hover {
-  position: relative;
   border: 0;
   background: rgba(230, 240, 253, 0.35);
   border-radius: 10px;
@@ -523,6 +527,15 @@ a {
 
 /* MEDIA */
 
+@media screen and (max-width: 1330px) {
+  .hero__subtitle {
+    max-width: 480px;
+  }
+  .menu__link {
+    padding: 16px 22px;
+  }
+}
+
 @media screen and (max-width: 1240px) {
   .hero {
     height: 561px;
@@ -577,6 +590,14 @@ a {
     min-width: 412px;
   }
 
+  .creating__option::after,
+  .creating__option:focus,
+  .creating__option:hover {
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+  }
+
   .benefits__img {
     margin-bottom: 30px;
   }
@@ -593,15 +614,6 @@ a {
 
   .benefits-four {
     margin-bottom: 130px;
-  }
-}
-
-@media screen and (max-width: 1330px) {
-  .hero__subtitle {
-    max-width: 480px;
-  }
-  .menu__link {
-    padding: 16px 22px;
   }
 }
 
@@ -885,12 +897,6 @@ a {
   .first-step {
     text-align: center;
     padding-top: 182px;
-  }
-
-  .creating__option::after,
-  .creating__option:focus,
-  .creating__option:hover {
-    background-color: none;
   }
 
   .creating__title {
