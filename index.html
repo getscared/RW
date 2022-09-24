@@ -19,25 +19,25 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#!" class="menu__link">Order Content</a>
+                <a class="menu__link" id="order_btn">Order Content</a>
               </li>
               <li class="menu__item">
-                <a href="#!" class="menu__link">Solutions</a>
+                <a class="menu__link">Solutions</a>
               </li>
               <li class="menu__item">
-                <a href="#!" class="menu__link">Features</a>
+                <a class="menu__link">Features</a>
               </li>
               <li class="menu__item">
-                <a href="#!" class="menu__link">Pricing</a>
+                <a class="menu__link">Pricing</a>
               </li>
               <li class="menu__item">
-                <a href="#!" class="menu__link">Company</a>
+                <a class="menu__link">Company</a>
               </li>
               <li class="menu__item">
-                <a href="#!" class="menu__link">Login</a>
+                <a href="" class="menu__link">Login</a>
               </li>
               <li class="menu__item">
-                <a href="#!" class="menu__link">Sign Up</a>
+                <a href="" class="menu__link">Sign Up</a>
               </li>
             </ul>
           </nav>
@@ -50,7 +50,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="order_content">
         <div class="container-full">
           <div class="hero__inner">
             <div class="hero__info">
@@ -65,7 +65,13 @@
                 dots on I’s with all the necessary. Reduces your total IoT cost
                 of operations.
               </h3>
-              <button type="submit" class="hero__button">Order Content</button>
+              <a
+                href="https://www.amazon.com/"
+                type="submit"
+                class="hero__button"
+                target="_blank"
+                >Order Content</a
+              >
             </div>
             <div class="hero__picture-web">
               <img
@@ -86,14 +92,14 @@
           </div>
         </div>
       </section>
-      <section class="creating">
+      <section class="creating" id="solutions">
         <div class="container-full">
           <p class="first-step">your first step is</p>
           <h2 class="creating__title">Start Creating Your Order</h2>
           <div class="creating__inner">
             <div class="creating__content">
               <div class="creating__options">
-                <div class="creating__option-first">
+                <div class="creating__option">
                   <img
                     class="creating__option-image"
                     src="./img/creating/option-1.svg"
@@ -173,7 +179,7 @@
           </div>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits" id="features">
         <div class="container-full">
           <div class="benefits__content">
             <div class="benefits__item benefits-first">
@@ -237,7 +243,7 @@
           </div>
         </div>
       </section>
-      <section class="order">
+      <section class="order" id="pricing">
         <div class="container-full">
           <div class="order__content">
             <p class="order_p">your first step is</p>
@@ -259,7 +265,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="company">
       <div class="container-full">
         <div class="footer__content">
           <div class="footer__rights">
@@ -273,4 +279,5 @@
       </div>
     </footer>
   </body>
+  <script src="./js/main.js"></script>
 </html>
