@@ -1,3 +1,5 @@
+"use strict";
+
 // Бекграунд для header
 function activeHeader() {
   const header = document.querySelector(".header");
@@ -48,8 +50,21 @@ companygBtn.addEventListener("click", function () {
 
 //Переключение изображений.
 
-const creatingOption = document.querySelector(".creating__option");
+const tabs = document.querySelectorAll(".creating__option");
+const creatingImg = document.querySelectorAll(".tabs__img");
 
-creatingOption.addEventListener("click", () => {
-  creatingOption.classList.add("creating__option__active");
+tabs.forEach((tab, i) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((value) => {
+      value.classList.remove("active");
+    });
+
+    creatingImg.forEach((element) => {
+      element.classList.remove("active");
+    });
+
+    tab.classList.add("active");
+
+    creatingImg[i].classList.add("active");
+  });
 });
